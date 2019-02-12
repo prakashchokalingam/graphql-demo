@@ -1,0 +1,22 @@
+  type TODO {
+    id: ID,
+    task: String!,
+    completed: Boolean,
+    createdAt: String,
+    updatedAt: String @deprecated
+  }
+
+  type Query {
+    todos(first: Int = 10): [TODO]
+    todo(id: ID): TODO
+  }
+
+  type Mutation {
+    create(task: String!): TODO
+    toggle(id: ID): TODO
+  }
+
+  type Subscription {
+    taskCreated: TODO,
+    taskUpdated: TODO
+  }
