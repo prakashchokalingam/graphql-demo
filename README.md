@@ -1,4 +1,4 @@
-# graphql-demo
+# graphql-todo
 
 Simple todo app using graphql with Node JS, Vue JS as client and Mongodb as storage.
 
